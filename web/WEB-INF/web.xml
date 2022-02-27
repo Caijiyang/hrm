@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+    <welcome-file-list>
+        <welcome-file>login.jsp</welcome-file>
+    </welcome-file-list>
+
+    <filter>
+        <filter-name>encodingFilter</filter-name>
+        <filter-class>com.hrm.filter.EncodingFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>encodingFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+
+    <!-- 配置UserServlet -->
+    <servlet>
+        <servlet-name>userServlet</servlet-name>
+        <servlet-class>com.hrm.servlet.UserServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>userServlet</servlet-name>
+        <!-- form表单的action属性值，要和这个url保持一致 -->
+        <url-pattern>/user</url-pattern>
+    </servlet-mapping>
+
+    <!-- 配置DeptServlet -->
+    <servlet>
+        <servlet-name>deptServlet</servlet-name>
+        <servlet-class>com.hrm.servlet.DeptServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>deptServlet</servlet-name>
+        <!-- form表单的action属性值，要和这个url保持一致 -->
+        <url-pattern>/dept</url-pattern>
+    </servlet-mapping>
+
+    <!-- 配置JobServlet -->
+    <servlet>
+        <servlet-name>jobServlet</servlet-name>
+        <servlet-class>com.hrm.servlet.JobServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>jobServlet</servlet-name>
+        <!-- form表单的action属性值，要和这个url保持一致 -->
+        <url-pattern>/job</url-pattern>
+    </servlet-mapping>
+
+    <!-- 配置NoticeServlet -->
+    <servlet>
+        <servlet-name>noticeServlet</servlet-name>
+        <servlet-class>com.hrm.servlet.NoticeServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>noticeServlet</servlet-name>
+        <!-- form表单的action属性值，要和这个url保持一致 -->
+        <url-pattern>/notice</url-pattern>
+    </servlet-mapping>
+
+    <!-- 配置EmployeeServlet -->
+    <servlet>
+        <servlet-name>employeeServlet</servlet-name>
+        <servlet-class>com.hrm.servlet.EmployeeServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>employeeServlet</servlet-name>
+        <!-- form表单的action属性值，要和这个url保持一致 -->
+        <url-pattern>/employee</url-pattern>
+    </servlet-mapping>
+
+    <!-- 配置documentServlet -->
+    <servlet>
+        <servlet-name>documentServlet</servlet-name>
+        <servlet-class>com.hrm.servlet.DocumentServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>documentServlet</servlet-name>
+        <!-- form表单的action属性值，要和这个url保持一致 -->
+        <url-pattern>/document</url-pattern>
+    </servlet-mapping>
+</web-app>

@@ -1,0 +1,123 @@
+[
+	{
+		"id": "1",
+		"name": "CSI员工之家",
+		"icon": null,
+		"url": "",
+		"parentId": "",
+		"childs": [
+			{
+				"id": "11",
+				"name": "用户管理",
+				"icon": "/xingxing.png",
+				"url": "user/selectUser",
+				"parentId": "1",
+				"childs": [
+					{
+						"id": "111",
+						"name": "用户查询",
+						"icon": "",
+						"url": "user/selectUser",
+						"parentId": "11",
+						"childs": []
+					
+					}
+				
+				]
+			},
+			{
+				"id": "12",
+				"name": "部门管理",
+				"icon": "/xingxing.png",
+				"url": "dept/selectDept",
+				"parentId": "1",
+				"childs": [
+					{
+						"id": "121",
+						"name": "部门查询",
+						"icon": "",
+						"url": "dept/selectDept",
+						"parentId": "12",
+						"childs": []
+					
+					}
+				
+				]
+			},
+			{
+				"id": "14",
+				"name": "职位管理",
+				"icon": "/xingxing.png",
+				"url": "job/selectJob",
+				"parentId": "1",
+				"childs": [
+					{
+						"id": "141",
+						"name": "职位查询",
+						"icon": "",
+						"url": "job/selectJob",
+						"parentId": "14",
+						"childs": []
+					
+					}
+				]
+			},
+			{
+				"id": "15",
+				"name": "员工管理",
+				"icon": "/xingxing.png",
+				"url": "employee/selectEmployee",
+				"parentId": "1",
+				"childs": [
+					{
+						"id": "151",
+						"name": "员工查询",
+						"icon": "",
+						"url": "employee/selectEmployee",
+						"parentId": "15",
+						"childs": []
+					
+					}
+				]
+			},
+			{
+				"id": "16",
+				"name": "公告管理",
+				"icon": "/xingxing.png",
+				"url": "notice/selectNotice",
+				"parentId": "1",
+				"childs": [
+					{
+						"id": "161",
+						"name": "公告查询",
+						"icon": "",
+						"url": "notice/selectNotice",
+						"parentId": "16",
+						"childs": []
+					
+					}
+				]
+			},
+			{
+				"id": "17",
+				"name": "下载中心",
+				"icon": "/xingxing.png",
+				"url": "document/selectDocument",
+				"parentId": "1",
+				"childs": [
+					{
+						"id": "171",
+						"name": "文档查询",
+						"icon": "",
+						"url": "document/selectDocument",
+						"parentId": "17",
+						"childs": []
+					
+					}
+				]
+			}
+		
+		]
+	}
+]
+

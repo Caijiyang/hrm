@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="war" build-on-make="true" name="hrm:war">
+    <output-path>$PROJECT_DIR$/out/artifacts/hrm_war</output-path>
+    <root id="archive" name="hrm_war.war">
+      <element id="artifact" artifact-name="hrm:war exploded" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="lib" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
